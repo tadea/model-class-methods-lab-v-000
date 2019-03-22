@@ -6,6 +6,6 @@ class Captain < ActiveRecord::Base
   end
 
   def self.sailors
-    joins(boats: :classifications).where(classifications: {name: 'Sailboats'})
+    joins(boats: :classifications).where(classifications: {name: 'Sailboat'})
   end
 end
